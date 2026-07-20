@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isAllowed(int sum, int k, int threshold){
-        if(double(sum/k)>=threshold) return true;
+        if(sum>=threshold*k) return true;
         else return false;
     }
     int numOfSubarrays(vector<int>& arr, int k, int threshold) {
